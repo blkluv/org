@@ -29,8 +29,11 @@ export default function Calendar() {
 	let [selectedDay, setSelectedDay] = useState(today);
 	let [currentMonth, setCurrentMonth] = useState(format(today, "MMM-yyyy"));
 	let firstDayCurrentMonth = parse(currentMonth, "MMM-yyyy", new Date());
-	let displayMonth = currentMonth.split("-")[0];
-	let displayYear = currentMonth.split("-")[1];
+	let calendarMonth = currentMonth.split("-")[0];
+	let calendarYear = currentMonth.split("-")[1];
+
+	let displayMonth = selectedDay.toString().slice(4, 7);
+	let displayYear = selectedDay.toString().slice(11, 15);
 	let displayDay = selectedDay.toString().slice(8, 10);
 	const [showUpcomingEvents, setShowUpcomingEvents] = useState(-1);
 	let colStartClasses = [
@@ -69,8 +72,8 @@ export default function Calendar() {
 			>
 				<div className="flex items-center">
 					<h2 className="flex-auto font-semibold">{`${
-						t("events.months")[displayMonth] || displayMonth
-					} ${displayYear}`}</h2>
+						t("events.months")[calendarMonth] || calendarMonth
+					} ${calendarYear}`}</h2>
 					<button
 						type="button"
 						onClick={previousMonth}
