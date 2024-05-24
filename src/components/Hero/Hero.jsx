@@ -25,7 +25,7 @@ export default function Hero() {
 	}, []);
 
 	return (
-		<div className="flex justify-center items-center h-screen w-full bg-square-svg bg-center bg-cover bg-no-repeat bg-fixed">
+		<div className="flex justify-center items-center h-screen w-full bg-square-svg bg-center bg-cover bg-no-repeat bg-fixed relative">
 			<div className="flex flex-col justify-center items-center gap-12 translate-y-8 z-10 md:gap-6 max-w-2xl">
 				<div id="title" className="flex items-center justify-center" data-aos="fade-up">
 					<img id="hth-logo-outline" {...HtHoutline} alt="Hack the Hill Logo" className="absolute w-3/4" />
@@ -41,7 +41,7 @@ export default function Hero() {
 				</div>
 			</div>
 			<div id="parliament" className="absolute bottom-0 left-0 pointer-events-none w-full">
-				<img className="w-full" {...parliament}></img>
+				<img className="w-full bottom-0" {...parliament} alt={t("hero.alt")}></img>
 			</div>
 		</div>
 	);

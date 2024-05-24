@@ -67,9 +67,13 @@ export default function Testimonials() {
 							</div>
 						</div>
 						<div className="flex flex-row gap-6">
-							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85" />
+							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85 md:w-3" />
 							<p>{testimonialData[2].content}</p>
-							<img {...quote} alt="quote" className="-scale-100 w-6 aspect-square self-end opacity-85" />
+							<img
+								{...quote}
+								alt="quote"
+								className="-scale-100 w-6 aspect-square self-end opacity-85 md:w-3"
+							/>
 						</div>
 						<div className="absolute -top-16 right-0 h-24">
 							<img src={beaver4.src} alt="Beaver" className="h-full" />
@@ -91,9 +95,13 @@ export default function Testimonials() {
 							</div>
 						</div>
 						<div className="flex flex-row gap-6">
-							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85" />
+							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85 md:w-3" />
 							<p>{testimonialData[0].content}</p>
-							<img {...quote} alt="quote" className="-scale-100 w-6 aspect-square self-end opacity-85" />
+							<img
+								{...quote}
+								alt="quote"
+								className="-scale-100 w-6 aspect-square self-end opacity-85 md:w-3"
+							/>
 						</div>
 					</div>
 					<div
@@ -112,9 +120,13 @@ export default function Testimonials() {
 							</div>
 						</div>
 						<div className="flex flex-row gap-6">
-							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85" />
+							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85 md:w-3" />
 							<p>{testimonialData[1].content}</p>
-							<img {...quote} alt="quote" className="-scale-100 w-6 aspect-square self-end opacity-85" />
+							<img
+								{...quote}
+								alt="quote"
+								className="-scale-100 w-6 aspect-square self-end opacity-85 md:w-3"
+							/>
 						</div>
 					</div>
 					<div

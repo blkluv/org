@@ -14,14 +14,14 @@ export default function About() {
 	return (
 		<>
 			<div className="w-full bg-background-dark flex justify-center items-center">
-				<div className="flex flex-col w-10/12 h-full justify-center items-center gap-36 py-36 text-center max-w-2xl">
+				<div className="flex flex-col w-10/12 h-full justify-center items-center gap-36 py-36 text-center max-w-2xl overflow-x-hidden">
 					<div className="flex flex-col text-start w-full" data-aos="fade-up">
 						<h1>{t("about.title")}</h1>
 						<h3 className="text-shadow_text">{t("about.subtitle")}</h3>
 					</div>
 					<div className="flex h-4/6 flex-row justify-between items-center flex-wrap lg:gap-8 px-8">
 						<div className="flex flex-col w-6/7 text-pretty text-left z-[1]">
-							<div className="grid grid-rows-1 grid-cols-2 gap-x-20 md:flex md:flex-col md:gap-y-20">
+							<div className="grid grid-rows-1 grid-cols-2 gap-x-20 lg:flex lg:flex-col lg:gap-y-20 lg:mb-20">
 								<div
 									className="row-start-1 col-start-2 row-end-1 col-end-3 self-center flex flex-col gap-8"
 									data-aos="fade-up"
@@ -51,7 +51,7 @@ export default function About() {
 							</div>
 
 							<div
-								className="row-start-3 col-start-1 row-end-4 col-end-3 grid grid-cols-6 justify-center overflow-visible"
+								className="row-start-3 col-start-1 row-end-4 col-end-3 grid grid-cols-6 justify-center overflow-visible lg:hidden"
 								data-aos="fade-up-right"
 							>
 								<svg className="col-start-2 col-end-6 opacity-25" viewBox="0 0 200 50">
@@ -87,7 +87,7 @@ export default function About() {
 									/>
 								</svg>
 							</div>
-							<div className="grid grid-cols-2 gap-x-20 md:flex md:flex-col md:gap-y-20">
+							<div className="grid grid-cols-2 gap-x-20 lg:flex lg:flex-col lg:gap-y-20 ">
 								<div
 									className="col-start-1 col-end-2 self-center flex flex-col gap-8"
 									data-aos="fade-up"
@@ -113,7 +113,7 @@ export default function About() {
 								</div>
 							</div>
 							<div
-								className="row-start-3 col-start-1 row-end-4 col-end-3 grid grid-cols-6 justify-center overflow-visible"
+								className="row-start-3 col-start-1 row-end-4 col-end-3 grid grid-cols-6 justify-center overflow-visible lg:hidden"
 								data-aos="fade-up-left"
 							>
 								<svg className="col-start-2 col-end-6 opacity-25" viewBox="0 0 200 50">
@@ -149,7 +149,7 @@ export default function About() {
 									/>
 								</svg>
 							</div>
-							<div className="grid grid-cols-2 gap-x-20 md:flex md:flex-col md:gap-y-20">
+							<div className="grid grid-cols-2 gap-x-20 lg:flex lg:flex-col lg:gap-y-20">
 								<div
 									className=" row-start-7 col-start-2 row-end-9 col-end-3 self-center flex flex-col gap-8"
 									data-aos="fade-up"
@@ -184,7 +184,7 @@ export default function About() {
 					<img
 						src={shape.src}
 						alt="shape"
-						className="w-full max-w-bg-deco opacity-35 absolute z-[0] translate-x-1/2 translate-y-24"
+						className="w-full opacity-35 absolute z-[0] translate-x-1/2 translate-y-1/8"
 					/>
 					<img
 						src={shape.src}

@@ -55,6 +55,7 @@ export default function Footer() {
 							href="https://www.facebook.com/canadascapitalhackathon"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Facebook"
 							className={`transition-all duration-300 hover:animate-shake-rotate text-white hover:opacity-100 opacity-85 ${
 								isMouseLeaving === "facebook" ? "animate-shake-end" : ""
 							}`}
@@ -66,6 +67,7 @@ export default function Footer() {
 							href="https://www.linkedin.com/company/hackthehill"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="LinkedIn"
 							className={`transition-all duration-300 hover:animate-shake-rotate text-white hover:opacity-100 opacity-80 ${
 								isMouseLeaving === "linkedin" ? "animate-shake-end" : ""
 							}`}
@@ -77,6 +79,7 @@ export default function Footer() {
 							href="https://www.instagram.com/hackthehill"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Instagram"
 							className={`transition-all duration-300 hover:animate-shake-rotate text-white hover:opacity-100 opacity-80 ${
 								isMouseLeaving === "instagram" ? "animate-shake-end" : ""
 							}`}
@@ -88,6 +91,7 @@ export default function Footer() {
 							href="https://twitter.com/hackthehill_"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Twitter"
 							className={`transition-all duration-300 hover:animate-shake-rotate text-white hover:opacity-100 opacity-80 ${
 								isMouseLeaving === "twitter" ? "animate-shake-end" : ""
 							}`}
@@ -99,6 +103,7 @@ export default function Footer() {
 							href="https://www.tiktok.com/@hackthehill"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="TikTok"
 							className={`transition-all duration-300 hover:animate-shake-rotate text-white hover:opacity-100 opacity-80 ${
 								isMouseLeaving === "tiktok" ? "animate-shake-end" : ""
 							}`}

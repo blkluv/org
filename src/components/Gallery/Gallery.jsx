@@ -108,7 +108,7 @@ export default function Gallery() {
 					<h3 className="text-shadow_text">{t("gallery.subtitle")}</h3>
 				</div>
 				<div className="flex h-4/6 flex-row justify-between items-center gap-16 2xl:flex-wrap">
-					<div className="flex px-16 justify-start items-center flex-wrap gap-8 2xl:justify-center 2xl:w-full">
+					<div className="flex px-16 justify-start items-center flex-wrap gap-8 2xl:justify-center 2xl:w-full md:px-2">
 						{albums.map(album => (
 							<div
 								key={album.tag}

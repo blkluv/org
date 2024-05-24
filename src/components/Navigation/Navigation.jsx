@@ -41,7 +41,7 @@ export default function Navigation(props) {
 	};
 
 	return (
-		<div className="fixed top-0 h-24 w-full z-50 flex justify-center items-center md:h-16">
+		<div className="fixed top-0 h-24 w-screen z-50 flex justify-center items-center md:h-16">
 			<nav
 				className="flex h-2/3 w-11/12 justify-between items-center box-border border-transparent rounded-2xl transition-all duration-500 md:bg-navbar md:backdrop-blur-xl md:w-full md:rounded-none md:pr-4 md:h-full"
 				aria-label={t("navbar.aria_label")}

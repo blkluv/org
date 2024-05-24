@@ -93,10 +93,11 @@ export default function Sponsors() {
 						{marqueeGroup(data, 2, pauseAnimation, startAnimation)}
 					</div>
 				</div>
-				<img src={waves.src} className="absolute top-0 w-full h-20 z-[1]  -translate-y-[1px]"></img>
+				<img src={waves.src} className="absolute top-0 w-full h-20 z-[1]  -translate-y-[1px]" alt="waves"></img>
 				<img
 					src={waves.src}
 					className="absolute bottom-0 w-full h-20 z-[1] -scale-y-100 -scale-x-100 translate-y-[1px]"
+					alt="waves"
 				></img>
 			</div>
 		</div>
