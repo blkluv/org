@@ -351,4 +351,8 @@ export default {
 		subtitle: "Cette page est en cours de développement. Veuillez revenir plus tard.",
 		home_btn: "Retourner à l'Accueil",
 	},
+	fourofour: {
+		title: "404 Page Non Trouvée",
+		subtitle: "La page que vous cherchez n'existe pas.",
+	},
 } as const;

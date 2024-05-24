@@ -4,7 +4,7 @@ import { t } from "../../i18n";
 import beaver_construction from "../../assets/beavar/beaver_construction.svg";
 import shape from "../../assets/patterns/ssshape.svg";
 
-export default function Construction() {
+export default function Construction(pageNotFound = false) {
 	return (
 		<div className="flex justify-center items-center w-full h-screen bg-background-dark relative overflow-hidden">
 			<div className="flex flex-col w-10/12 h-full justify-center items-center gap-20 py-36 text-left max-w-2xl z-[1]">
@@ -12,8 +12,9 @@ export default function Construction() {
 					className="flex flex-col items-start gap-10 p-8 rounded-3xl bg-blur-svg relative w-1/2 lg:w-full mt-32"
 					data-aos="fade-up"
 				>
-					<h2 className="mt-8">{t("construction.title")}</h2>
-					<p>{t("construction.subtitle")}</p>
+					<h2 className="mt-8">{pageNotFound ? t("fourofour.title") : t("construction.title")}</h2>
+					<p>{pageNotFound ? t("fourofour.subtitle") : t("construction.subtitle")}</p>
+
 					<div className="self-end">
 						<Button
 							onClick={() => window.open("https://cdn1.hackthehill.com/legal/constitution.pdf", "_blank")}
