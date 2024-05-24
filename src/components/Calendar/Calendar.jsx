@@ -71,9 +71,9 @@ export default function Calendar() {
 				data-aos="fade-right"
 			>
 				<div className="flex items-center">
-					<h2 className="flex-auto font-semibold">{`${
+					<h3 className="flex-auto font-semibold">{`${
 						t("events.months")[calendarMonth] || calendarMonth
-					} ${calendarYear}`}</h2>
+					} ${calendarYear}`}</h3>
 					<button
 						type="button"
 						onClick={previousMonth}
@@ -147,7 +147,7 @@ export default function Calendar() {
 				<div className="overflow-hidden p-8">
 					<div className="flex flex-col gap-8">
 						<div className="flex items-center justify-between gap-4 flex-wrap">
-							<h2 className="font-semibold">
+							<h3 className="font-semibold">
 								{showUpcomingEvents === -1 ? (
 									t("events.previous")
 								) : showUpcomingEvents === 1 ? (
@@ -161,7 +161,7 @@ export default function Calendar() {
 										{t("events.months")[displayMonth] || displayMonth} {displayDay}, {displayYear}
 									</span>
 								)}
-							</h2>
+							</h3>
 							<div className="flex flex-row justify-center items-center shadow-glow">
 								<button
 									type="button"

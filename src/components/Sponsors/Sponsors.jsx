@@ -85,7 +85,7 @@ export default function Sponsors() {
 
 	return (
 		<div className="w-full flex flex-col gap-8 items-center justify-center">
-			<h3>{t("sponsors.title")}</h3>
+			<h2>{t("sponsors.title")}</h2>
 			<div className="w-full flex justify-center items-center relative bg-theme-gradient">
 				<div className="flex flex-col w-10/12 h-full justify-center items-center gap-20 py-28 text-left max-w-2xl z-[2]">
 					<div className="carousel-track  z-[2]">

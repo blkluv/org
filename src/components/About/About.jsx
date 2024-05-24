@@ -17,7 +17,7 @@ export default function About() {
 				<div className="flex flex-col w-10/12 h-full justify-center items-center gap-36 py-36 text-center max-w-2xl overflow-x-hidden">
 					<div className="flex flex-col text-start w-full" data-aos="fade-up">
 						<h1>{t("about.title")}</h1>
-						<h3 className="text-shadow_text">{t("about.subtitle")}</h3>
+						<h2 className="text-shadow_text">{t("about.subtitle")}</h2>
 					</div>
 					<div className="flex h-4/6 flex-row justify-between items-center flex-wrap lg:gap-8 px-8">
 						<div className="flex flex-col w-6/7 text-pretty text-left z-[1]">
@@ -27,10 +27,10 @@ export default function About() {
 									data-aos="fade-up"
 									data-aos-duration="1000"
 								>
-									<h3>
+									<h2>
 										<span>{t("about.p1_prefix")}</span>
 										<span className="text-shadow_text"> {t("about.p1")}</span>
-									</h3>
+									</h2>
 									<div className="self-start">
 										<Button
 											onClick={() =>
@@ -93,10 +93,10 @@ export default function About() {
 									data-aos="fade-up"
 									data-aos-duration="1000"
 								>
-									<h3>
+									<h2>
 										<span>{t("about.p2_prefix")}</span>
 										<span className="text-shadow_text"> {t("about.p2")}</span>
-									</h3>
+									</h2>
 									<div className="self-start">
 										<Button fill={false}>
 											<a href={"/events"} target="_blank" rel="noreferrer">
@@ -155,10 +155,10 @@ export default function About() {
 									data-aos="fade-up"
 									data-aos-duration="1000"
 								>
-									<h3>
+									<h2>
 										<span>{t("about.p3_prefix")}</span>
 										<span className="text-shadow_text"> {t("about.p3")}</span>
-									</h3>
+									</h2>
 									<div className="self-start">
 										<Button
 											onClick={() => window.open("https://linktr.ee/hackthehill", "_blank")}

@@ -25,7 +25,7 @@ export default function DocumentsPage() {
 						data-aos="fade-left"
 					>
 						<div className="flex flex-row justify-between items-center w-full gap-4">
-							<h3>{t("documents.constitution")}</h3>
+							<h2>{t("documents.constitution")}</h2>
 							<img
 								className="box-border h-20 w-20 aspect-square object-cover rounded-[50%]"
 								src={cv.src}
@@ -54,7 +54,7 @@ export default function DocumentsPage() {
 						data-aos="fade-right"
 					>
 						<div className="flex flex-row justify-between items-center w-full gap-4">
-							<h3>{t("documents.privacy")}</h3>
+							<h2>{t("documents.privacy")}</h2>
 							<img
 								className="box-border h-20 w-20 aspect-square object-cover rounded-[50%] shadow-glow"
 								src={cv.src}

@@ -12,7 +12,7 @@ export default function Construction() {
 					className="flex flex-col items-start gap-10 p-8 rounded-3xl bg-blur-svg relative w-1/2 lg:w-full mt-32"
 					data-aos="fade-up"
 				>
-					<h3 className="mt-8">{t("construction.title")}</h3>
+					<h2 className="mt-8">{t("construction.title")}</h2>
 					<p>{t("construction.subtitle")}</p>
 					<div className="self-end">
 						<Button

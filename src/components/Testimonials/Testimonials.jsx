@@ -48,7 +48,7 @@ export default function Testimonials() {
 			<div className="flex flex-col w-10/12 h-full justify-center items-center gap-20 py-36 text-left max-w-2xl">
 				<div className="flex flex-col text-left w-full" data-aos="fade-up">
 					<h1>{t("testimonials.title")}</h1>
-					<h3 className="text-shadow_text">{t("testimonials.subtitle")}</h3>
+					<h2 className="text-shadow_text">{t("testimonials.subtitle")}</h2>
 				</div>
 				<div className="grid gap-4 grid-rows-12 grid-cols-12 w-full max-w-2xl xl:flex xl:flex-col xl:px-4 xl:gap-2">
 					<div

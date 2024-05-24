@@ -14,14 +14,14 @@ export default function Stats() {
 			<div className="flex flex-col w-10/12 h-full justify-center items-center gap-20 py-36 text-left max-w-2xl z-[4] ">
 				<div className="flex flex-col text-start w-full" data-aos="fade-up">
 					<h1>{t("stats.title")}</h1>
-					<h3 className="text-shadow_text">{t("stats.subtitle")}</h3>
+					<h2 className="text-shadow_text">{t("stats.subtitle")}</h2>
 				</div>
 				<div className="grid gap-4 grid-rows-12 grid-cols-12 w-full max-w-2xl md:flex md:flex-col xl:px-4 md:gap-2">
 					<div
 						className="flex flex-col md:flex-row justify-start items-between bg-blur-svg rounded-3xl p-8 row-start-1 col-start-6 row-end-5 col-end-13 relative"
 						data-aos="fade-left"
 					>
-						<h3>{t("stats.description")}</h3>
+						<h2>{t("stats.description")}</h2>
 						<div className="absolute -top-16 right-0 h-24">
 							<img src={beaver2.src} alt="Beaver" className="h-full" />
 						</div>
@@ -36,7 +36,7 @@ export default function Stats() {
 							alt={"Hacker"}
 						/>
 						<div className="md:text-end md:self-center">
-							<h3>600+</h3>
+							<h2>600+</h2>
 							<p>Hackers</p>
 						</div>
 					</div>
@@ -50,7 +50,7 @@ export default function Stats() {
 							alt={"Team"}
 						/>
 						<div className="md:text-end md:self-center">
-							<h3>15+</h3>
+							<h2>15+</h2>
 							<p>{t("stats.sponsors")}</p>
 						</div>
 					</div>
@@ -64,7 +64,7 @@ export default function Stats() {
 							alt={"Team"}
 						/>
 						<div className="md:text-end md:self-center">
-							<h3>100+</h3>
+							<h2>100+</h2>
 							<p>{t("stats.volunteers")}</p>
 						</div>
 					</div>
@@ -78,7 +78,7 @@ export default function Stats() {
 							alt={"Cash"}
 						/>
 						<div className="md:text-end md:self-center">
-							<h3>$35k+</h3>
+							<h2>$35k+</h2>
 							<p>{t("stats.prizes")}</p>
 						</div>
 					</div>
@@ -92,7 +92,7 @@ export default function Stats() {
 							alt={"Tool"}
 						/>
 						<div className="text-end self-center">
-							<h3>5+</h3>
+							<h2>5+</h2>
 							<p>{t("stats.workshops")}</p>
 						</div>
 					</div>
@@ -106,7 +106,7 @@ export default function Stats() {
 							alt={"Drink"}
 						/>
 						<div className="text-end self-center">
-							<h3>1000+</h3>
+							<h2>1000+</h2>
 							<p>{t("stats.redbulls")}</p>
 						</div>
 					</div>
