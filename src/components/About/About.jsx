@@ -3,7 +3,7 @@ import { t } from "../../i18n";
 import team1 from "../../assets/about/team1.webp";
 import team3 from "../../assets/about/team3.webp";
 import Button from "../Button/Button";
-import hackhers2 from "../../assets/gallery/hackhers2.webp";
+import about3 from "../../assets/about/about3.webp";
 import shape from "../../assets/patterns/ssshape.svg";
 
 export default function About() {
@@ -46,7 +46,7 @@ export default function About() {
 									className="row-start-1 col-start-1 row-end-1 col-end-2 bg-blur-svg overflow-visible rounded-3xl p-4"
 									data-aos="fade-right"
 								>
-									<img {...team1} className="w-full h-full object-cover rounded-2xl" alt="HackHers" />
+									<img {...team1} className="w-full h-full object-cover rounded-2xl" alt="about3" />
 								</div>
 							</div>
 
@@ -87,7 +87,7 @@ export default function About() {
 									/>
 								</svg>
 							</div>
-							<div className="grid grid-cols-2 gap-x-20 lg:flex lg:flex-col lg:gap-y-20 ">
+							<div className="grid grid-cols-2 gap-x-20 lg:flex lg:flex-col lg:gap-y-20 lg:mb-20">
 								<div
 									className="col-start-1 col-end-2 self-center flex flex-col gap-8"
 									data-aos="fade-up"
@@ -109,7 +109,7 @@ export default function About() {
 									className="col-start-2 col-end-3  bg-blur-svg overflow-visible rounded-3xl p-4"
 									data-aos="fade-left"
 								>
-									<img {...team3} className="w-full h-full object-cover rounded-2xl" alt="HackHers" />
+									<img {...team3} className="w-full h-full object-cover rounded-2xl" alt="about3" />
 								</div>
 							</div>
 							<div
@@ -172,11 +172,7 @@ export default function About() {
 									className="row-start-7 col-start-1 row-end-9 col-end-2 bg-blur-svg overflow-visible rounded-3xl p-4"
 									data-aos="fade-right"
 								>
-									<img
-										{...hackhers2}
-										className="w-full h-full object-cover rounded-2xl"
-										alt="HackHers"
-									/>
+									<img {...about3} className="w-full h-full object-cover rounded-2xl" alt="about3" />
 								</div>
 							</div>
 						</div>
