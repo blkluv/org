@@ -346,4 +346,9 @@ export default {
 		day: "Jour",
 		upcoming: "À venir",
 	},
+	construction: {
+		title: "En Construction",
+		subtitle: "Cette page est en cours de développement. Veuillez revenir plus tard.",
+		home_btn: "Retourner à l'Accueil",
+	},
 } as const;

@@ -345,4 +345,9 @@ export default {
 		day: "Day",
 		upcoming: "Upcoming",
 	},
+	construction: {
+		title: "Under Construction",
+		subtitle: "This page is still in development. Please check back later.",
+		home_btn: "Back to Home",
+	},
 } as const;

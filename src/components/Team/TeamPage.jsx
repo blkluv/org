@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../global.css";
 import { t } from "../../i18n";
+import Construction from "../Construction/Construction";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function TeamPage() {
 	const team = [
@@ -346,5 +349,9 @@ export default function TeamPage() {
 		},
 	];
 
-	return <></>;
+	useEffect(() => {
+		AOS.init({ once: false, duration: 700 });
+	}, []);
+
+	return <Construction />;
 }
