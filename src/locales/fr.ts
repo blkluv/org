@@ -3,7 +3,7 @@ export default {
 		links: { events: "Événements", blog: "Blog", documents: "Documents", team: "Équipe" },
 		aria_label: "Barre de Navigation",
 	},
-	hero: { title: "Le Hackathon de la Capitale Canadienne" },
+	hero: { title: "Le Hackathon de la Capitale Canadienne", alt: "Parlement" },
 	about: {
 		title: "C'est plus qu'un seul hackathon",
 		subtitle: "C'est une communauté d'étudiants passionnés qui sont dédiés à apprendre, grandir et créer.",
@@ -70,7 +70,7 @@ export default {
 		},
 	},
 	sponsors: {
-		title: "Nos commanditaires",
+		title: "Nos Commanditaires ❤️",
 		subtitle: "Ce sont les entreprises qui rendent Hack the Hill possible année après année.",
 	},
 	collaborators: {
@@ -345,5 +345,14 @@ export default {
 		previous: "Précédent",
 		day: "Jour",
 		upcoming: "À venir",
+	},
+	construction: {
+		title: "En Construction",
+		subtitle: "Cette page est en cours de développement. Veuillez revenir plus tard.",
+		home_btn: "Retourner à l'Accueil",
+	},
+	fourofour: {
+		title: "404 Page Non Trouvée",
+		subtitle: "La page que vous cherchez n'existe pas.",
 	},
 } as const;

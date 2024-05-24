@@ -84,7 +84,8 @@ export default function Sponsors() {
 	}
 
 	return (
-		<>
+		<div className="w-full flex flex-col gap-8 items-center justify-center">
+			<h2>{t("sponsors.title")}</h2>
 			<div className="w-full flex justify-center items-center relative bg-theme-gradient">
 				<div className="flex flex-col w-10/12 h-full justify-center items-center gap-20 py-28 text-left max-w-2xl z-[2]">
 					<div className="carousel-track  z-[2]">
@@ -92,12 +93,13 @@ export default function Sponsors() {
 						{marqueeGroup(data, 2, pauseAnimation, startAnimation)}
 					</div>
 				</div>
-				<img src={waves.src} className="absolute top-0 w-full h-20 z-[1]  -translate-y-[1px]"></img>
+				<img src={waves.src} className="absolute top-0 w-full h-20 z-[1]  -translate-y-[1px]" alt="waves"></img>
 				<img
 					src={waves.src}
 					className="absolute bottom-0 w-full h-20 z-[1] -scale-y-100 -scale-x-100 translate-y-[1px]"
+					alt="waves"
 				></img>
 			</div>
-		</>
+		</div>
 	);
 }

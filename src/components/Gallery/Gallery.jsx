@@ -105,10 +105,10 @@ export default function Gallery() {
 			<div className="flex flex-col w-10/12 h-full justify-center items-center gap-20 py-36 text-left max-w-2xl">
 				<div className="flex flex-col text-left w-full" data-aos="fade-up">
 					<h1>{t("gallery.title")}</h1>
-					<h3 className="text-shadow_text">{t("gallery.subtitle")}</h3>
+					<h2 className="text-shadow_text">{t("gallery.subtitle")}</h2>
 				</div>
 				<div className="flex h-4/6 flex-row justify-between items-center gap-16 2xl:flex-wrap">
-					<div className="flex px-16 justify-start items-center flex-wrap gap-8 2xl:justify-center 2xl:w-full">
+					<div className="flex px-16 justify-start items-center flex-wrap gap-8 2xl:justify-center 2xl:w-full md:px-2">
 						{albums.map(album => (
 							<div
 								key={album.tag}

@@ -25,23 +25,23 @@ export default function Hero() {
 	}, []);
 
 	return (
-		<div className="flex justify-center items-center h-screen w-full bg-square-svg bg-center bg-cover bg-no-repeat bg-fixed">
+		<div className="flex justify-center items-center h-screen w-full bg-square-svg bg-center bg-cover bg-no-repeat bg-fixed relative">
 			<div className="flex flex-col justify-center items-center gap-12 translate-y-8 z-10 md:gap-6 max-w-2xl">
 				<div id="title" className="flex items-center justify-center" data-aos="fade-up">
 					<img id="hth-logo-outline" {...HtHoutline} alt="Hack the Hill Logo" className="absolute w-3/4" />
 					<img id="hth-logo-solid" {...HtHSolid} alt="Hack the Hill Logo" className="relative w-3/4" />
 				</div>
 				<div id="content" className="flex flex-col w-full justify-center items-center gap-8 px-4 md:gap-4">
-					<h2 className="font-medium text-3xl text-center md:text-lg" data-aos="fade-up" data-aos-delay="100">
+					<h3 className="font-medium text-3xl text-center md:text-lg" data-aos="fade-up" data-aos-delay="100">
 						{t("hero.title")}
-					</h2>
+					</h3>
 					<div data-aos="fade-up" data-aos-delay="200">
 						<Button onClick={() => window.open("https://2024.hackthehill.com", "_blank")}>2024</Button>
 					</div>
 				</div>
 			</div>
 			<div id="parliament" className="absolute bottom-0 left-0 pointer-events-none w-full">
-				<img className="w-full" {...parliament}></img>
+				<img className="w-full bottom-0" {...parliament} alt={t("hero.alt")}></img>
 			</div>
 		</div>
 	);

@@ -3,13 +3,13 @@ export default {
 		links: { events: "Events", blog: "Blog", documents: "Documents", team: "Team" },
 		aria_label: "Navigation Bar",
 	},
-	hero: { title: "Canada's Capital Hackathon" },
+	hero: { title: "Canada's Capital Hackathon", alt: "Parliament" },
 	about: {
 		title: "It's more than just a hackathon",
 		subtitle: "It's a community of passionate students who are dedicated to learning, growing, and creating.",
 		p1_prefix: "Hack the Hill",
 		p1: "is a student-run organization that aims to foster a culture of innovation and creativity in the Ottawa community.",
-		p1_btn: "Learn more about our story",
+		p1_btn: "Explore our journey and story",
 		p2_prefix: "Our goal",
 		p2: "is to provide students with the resources and opportunities they need to succeed in the tech industry.",
 		p2_btn: "Take a look at some of our upcoming events",
@@ -70,7 +70,7 @@ export default {
 		},
 	},
 	sponsors: {
-		title: "A look at our sponsors",
+		title: "Our Sponsors ❤️",
 		subtitle: "These are the companies that make Hack the Hill possible year after year.",
 	},
 	collaborators: {
@@ -304,8 +304,6 @@ export default {
 				disabled: false,
 			},
 		],
-		less: "Show Less",
-		more: "Show More",
 	},
 	footer: {
 		constitution: "Constitution",
@@ -344,5 +342,14 @@ export default {
 		previous: "Previous",
 		day: "Day",
 		upcoming: "Upcoming",
+	},
+	construction: {
+		title: "Under Construction",
+		subtitle: "This page is still in development. Please check back later.",
+		home_btn: "Back to Home",
+	},
+	fourofour: {
+		title: "404 Page Not Found",
+		subtitle: "The page you are looking for does not exist.",
 	},
 } as const;

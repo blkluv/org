@@ -48,7 +48,7 @@ export default function Testimonials() {
 			<div className="flex flex-col w-10/12 h-full justify-center items-center gap-20 py-36 text-left max-w-2xl">
 				<div className="flex flex-col text-left w-full" data-aos="fade-up">
 					<h1>{t("testimonials.title")}</h1>
-					<h3 className="text-shadow_text">{t("testimonials.subtitle")}</h3>
+					<h2 className="text-shadow_text">{t("testimonials.subtitle")}</h2>
 				</div>
 				<div className="grid gap-4 grid-rows-12 grid-cols-12 w-full max-w-2xl xl:flex xl:flex-col xl:px-4 xl:gap-2">
 					<div
@@ -67,9 +67,13 @@ export default function Testimonials() {
 							</div>
 						</div>
 						<div className="flex flex-row gap-6">
-							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85" />
+							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85 md:w-3" />
 							<p>{testimonialData[2].content}</p>
-							<img {...quote} alt="quote" className="-scale-100 w-6 aspect-square self-end opacity-85" />
+							<img
+								{...quote}
+								alt="quote"
+								className="-scale-100 w-6 aspect-square self-end opacity-85 md:w-3"
+							/>
 						</div>
 						<div className="absolute -top-16 right-0 h-24">
 							<img src={beaver4.src} alt="Beaver" className="h-full" />
@@ -91,9 +95,13 @@ export default function Testimonials() {
 							</div>
 						</div>
 						<div className="flex flex-row gap-6">
-							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85" />
+							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85 md:w-3" />
 							<p>{testimonialData[0].content}</p>
-							<img {...quote} alt="quote" className="-scale-100 w-6 aspect-square self-end opacity-85" />
+							<img
+								{...quote}
+								alt="quote"
+								className="-scale-100 w-6 aspect-square self-end opacity-85 md:w-3"
+							/>
 						</div>
 					</div>
 					<div
@@ -112,9 +120,13 @@ export default function Testimonials() {
 							</div>
 						</div>
 						<div className="flex flex-row gap-6">
-							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85" />
+							<img {...quote} alt="quote" className="w-6 aspect-square self-start opacity-85 md:w-3" />
 							<p>{testimonialData[1].content}</p>
-							<img {...quote} alt="quote" className="-scale-100 w-6 aspect-square self-end opacity-85" />
+							<img
+								{...quote}
+								alt="quote"
+								className="-scale-100 w-6 aspect-square self-end opacity-85 md:w-3"
+							/>
 						</div>
 					</div>
 					<div

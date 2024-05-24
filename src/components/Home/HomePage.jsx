@@ -15,7 +15,7 @@ export default function HomePage() {
 		AOS.init({ once: false, duration: 700 });
 	}, []);
 	return (
-		<div className="w-full flex flex-col items-center justify-center">
+		<div className="w-full flex flex-col items-center justify-center overflow-x-hidden relative">
 			<Hero />
 			<About />
 			<Stats />
