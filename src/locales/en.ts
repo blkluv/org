@@ -14,7 +14,7 @@ export default {
 		p2: "is to provide students with the resources and opportunities they need to succeed in the tech industry.",
 		p2_btn: "Take a look at some of our upcoming events",
 		p3_prefix: "There's a place for you",
-		p3: "; wether you're a beginner or an experienced hacker, there's something for everyone",
+		p3: "; whether you're a beginner or an experienced hacker, there's something for everyone",
 		p3_btn: "Join us and be a part of something amazing",
 	},
 	stats: {

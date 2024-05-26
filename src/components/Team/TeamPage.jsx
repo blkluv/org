@@ -353,5 +353,5 @@ export default function TeamPage() {
 		AOS.init({ once: false, duration: 700 });
 	}, []);
 
-	return <Construction />;
+	return <Construction pageNotFound={false} />;
 }

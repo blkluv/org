@@ -8,5 +8,5 @@ export default function BlogPage() {
 	useEffect(() => {
 		AOS.init({ once: false, duration: 700 });
 	}, []);
-	return <Construction />;
+	return <Construction pageNotFound={false} />;
 }

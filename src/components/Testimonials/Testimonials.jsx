@@ -3,7 +3,7 @@ import { t } from "../../i18n";
 import quote from "../../assets/icons/quote.svg";
 import Button from "../Button/Button";
 import beaver4 from "../../assets/beavar/Beaver4.svg";
-import blob from "../../assets/SVGs/blob.svg";
+import blob from "../../assets/patterns/blob.svg";
 
 export default function Testimonials() {
 	const testimonialData = [
@@ -147,7 +147,7 @@ export default function Testimonials() {
 				<img
 					src={blob.src}
 					alt="blob"
-					className="w-full max-w-bg-deco opacity-30 absolute z-[0] translate-y-10 scale-[1.25]"
+					className="w-full max-w-bg-deco opacity-35 absolute translate-y-24 scale-[1.25] pointer-events-none md:hidden"
 				/>
 			</div>
 		</div>
