@@ -19,7 +19,7 @@ export default function DocumentsPage() {
 				<div className="flex flex-col text-left w-full" data-aos="fade-up">
 					<h1 data-aos="fade-up">{t("documents.title")}</h1>
 				</div>
-				<div className="grid grid-rows-1 grid-cols-2 gap-8 w-10/12 max-w-2xl xl:flex xl:flex-wrap">
+				<div className="grid grid-rows-2 grid-cols-2 gap-8 w-10/12 max-w-2xl xl:flex xl:flex-wrap">
 					<div
 						className="row-start-1 col-start-2 row-end-1 col-end-3 flex flex-col items-start justify-between gap-32 p-8 rounded-3xl bg-blur-svg relative"
 						data-aos="fade-left"
@@ -71,6 +71,58 @@ export default function DocumentsPage() {
 									fill={false}
 								>
 									{t("documents.privacy_btn")}
+								</Button>
+							</div>
+						</div>
+					</div>
+					<div
+						className="row-start-2 col-start-1 row-end-2 col-end-2 flex flex-col items-start justify-between gap-32 p-8 rounded-3xl bg-blur-svg overflow-hidden"
+						data-aos="fade-right"
+					>
+						<div className="flex flex-row justify-between items-center w-full gap-4">
+							<h2>{t("documents.conduct")}</h2>
+							<img
+								className="box-border h-20 w-20 aspect-square object-cover rounded-[50%] shadow-glow"
+								src={cv.src}
+								alt="Document"
+							/>
+						</div>
+						<div>
+							<p>{t("documents.conduct_desc")}</p>
+							<div className="w-full flex justify-end mt-4">
+								<Button
+									onClick={() =>
+										window.open("https://cdn1.hackthehill.com/legal/code-of-conduct.pdf", "_blank")
+									}
+									fill={false}
+								>
+									{t("documents.conduct_btn")}
+								</Button>
+							</div>
+						</div>
+					</div>
+					<div
+						className="row-start-2 col-start-2 row-end-2 col-end-2 flex flex-col items-start justify-between gap-32 p-8 rounded-3xl bg-[#020106] overflow-hidden"
+						data-aos="fade-left"
+					>
+						<div className="flex flex-row justify-between items-center w-full gap-4">
+							<h2>{t("documents.service")}</h2>
+							<img
+								className="box-border h-20 w-20 aspect-square object-cover rounded-[50%] shadow-glow"
+								src={cv.src}
+								alt="Document"
+							/>
+						</div>
+						<div>
+							<p>{t("documents.service_desc")}</p>
+							<div className="w-full flex justify-end mt-4">
+								<Button
+									onClick={() =>
+										window.open("https://cdn1.hackthehill.com/legal/terms-of-service.pdf", "_blank")
+									}
+									fill={false}
+								>
+									{t("documents.service_btn")}
 								</Button>
 							</div>
 						</div>

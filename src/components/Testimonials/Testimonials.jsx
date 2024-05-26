@@ -3,6 +3,7 @@ import { t } from "../../i18n";
 import quote from "../../assets/icons/quote.svg";
 import Button from "../Button/Button";
 import beaver4 from "../../assets/beavar/Beaver4.svg";
+import blob from "../../assets/patterns/blob.svg";
 
 export default function Testimonials() {
 	const testimonialData = [
@@ -45,12 +46,12 @@ export default function Testimonials() {
 
 	return (
 		<div className="flex justify-center items-center w-full bg-background-dark">
-			<div className="flex flex-col w-10/12 h-full justify-center items-center gap-20 py-36 text-left max-w-2xl">
-				<div className="flex flex-col text-left w-full" data-aos="fade-up">
+			<div className="relative flex flex-col w-10/12 h-full justify-center items-center gap-20 py-36 text-left max-w-2xl overflow-hidden">
+				<div className="flex flex-col text-left w-full z-[1]" data-aos="fade-up">
 					<h1>{t("testimonials.title")}</h1>
 					<h2 className="text-shadow_text">{t("testimonials.subtitle")}</h2>
 				</div>
-				<div className="grid gap-4 grid-rows-12 grid-cols-12 w-full max-w-2xl xl:flex xl:flex-col xl:px-4 xl:gap-2">
+				<div className="grid gap-4 grid-rows-12 grid-cols-12 w-full max-w-2xl xl:flex xl:flex-col xl:px-4 xl:gap-2 z-[1]">
 					<div
 						className="flex flex-col justify-between items-start gap-8 bg-blur-svg rounded-3xl p-8 row-start-1 col-start-8 row-end-10 col-end-13"
 						data-aos="fade-left"
@@ -143,6 +144,11 @@ export default function Testimonials() {
 						</div>
 					</div>
 				</div>
+				<img
+					src={blob.src}
+					alt="blob"
+					className="w-full max-w-bg-deco opacity-35 absolute translate-y-24 scale-[1.25] pointer-events-none md:hidden"
+				/>
 			</div>
 		</div>
 	);

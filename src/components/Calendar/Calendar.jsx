@@ -113,7 +113,7 @@ export default function Calendar() {
 									!isEqual(day, selectedDay) &&
 										!isToday(day) &&
 										isSameMonth(day, firstDayCurrentMonth) &&
-										"text-shade-5",
+										"text-shade-3",
 									!isEqual(day, selectedDay) &&
 										!isToday(day) &&
 										!isSameMonth(day, firstDayCurrentMonth) &&
