@@ -323,6 +323,13 @@ export default {
 		privacy_desc:
 			"Notre politique de confidentialité explique comment nous collectons, utilisons et partageons vos informations.",
 		privacy_btn: "Lire la Politique de Confidentialité",
+		conduct: "Code de Conduite",
+		conduct_desc:
+			"Notre code de conduite établit les normes de comportement que nous attendons de tous les membres de notre communauté.",
+		conduct_btn: "Lire le Code de Conduite",
+		service: "Conditions de Service",
+		service_desc: "Nos conditions de service définissent les conditions d'utilisation de notre site Web.",
+		service_btn: "Lire les Conditions de Service",
 	},
 	events: {
 		title: "Événements",

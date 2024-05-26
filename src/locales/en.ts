@@ -320,6 +320,14 @@ export default {
 		privacy: "Privacy Policy",
 		privacy_desc: "Our privacy policy outlines how we collect, use, and store your personal information.",
 		privacy_btn: "Read the Privacy Policy",
+		conduct: "Code of Conduct",
+		conduct_desc:
+			"Our code of conduct outlines the expectations and guidelines for all participants at our events.",
+		conduct_btn: "Read the Code of Conduct",
+		service: "Terms of Service",
+		service_desc:
+			"Our terms of service outline the rules and regulations for using our website and participating in our events.",
+		service_btn: "Read the Terms of Service",
 	},
 	events: {
 		title: "Events",
