@@ -198,7 +198,7 @@ export default function Gallery() {
 								alt={"Hacker"}
 							/>
 							<div className="md:text-end md:self-center ">
-								<h3>{albums?.find(album => album.tag === selectedAlbum)?.statNumber}</h3>
+								<h2>{albums?.find(album => album.tag === selectedAlbum)?.statNumber}</h2>
 								<h4>{albums?.find(album => album.tag === selectedAlbum)?.statDescription}</h4>
 							</div>
 						</div>

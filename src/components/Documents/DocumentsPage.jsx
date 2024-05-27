@@ -78,6 +78,7 @@ export default function DocumentsPage() {
 					<div
 						className="row-start-2 col-start-1 row-end-2 col-end-2 flex flex-col items-start justify-between gap-32 p-8 rounded-3xl bg-blur-svg overflow-hidden"
 						data-aos="fade-right"
+						data-aos-offset="-100"
 					>
 						<div className="flex flex-row justify-between items-center w-full gap-4">
 							<h2>{t("documents.conduct")}</h2>
@@ -104,6 +105,7 @@ export default function DocumentsPage() {
 					<div
 						className="row-start-2 col-start-2 row-end-2 col-end-2 flex flex-col items-start justify-between gap-32 p-8 rounded-3xl bg-[#020106] overflow-hidden"
 						data-aos="fade-left"
+						data-aos-offset="-100"
 					>
 						<div className="flex flex-row justify-between items-center w-full gap-4">
 							<h2>{t("documents.service")}</h2>
