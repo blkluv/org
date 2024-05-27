@@ -3,7 +3,7 @@ export default {
 		links: { events: "Événements", blog: "Blog", documents: "Documents", team: "Équipe" },
 		aria_label: "Barre de Navigation",
 	},
-	hero: { title: "Le Hackathon de la Capitale Canadienne", alt: "Parlement" },
+	hero: { title: "L'Organisation du Hackathon de la Capitale Canadienne", alt: "Parlement" },
 	about: {
 		title: "C'est plus qu'un seul hackathon",
 		subtitle: "C'est une communauté d'étudiants passionnés qui sont dédiés à apprendre, grandir et créer.",
@@ -25,7 +25,7 @@ export default {
 		volunteers: "Bénévoles",
 		prizes: "En Prix",
 		workshops: "Ateliers",
-		redbulls: "Boissons Énergisantes Consommées",
+		redbulls: "Boissons Cafféinées Consommées",
 	},
 	gallery: {
 		title: "Où les Moments sont Créés",

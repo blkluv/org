@@ -16,11 +16,8 @@ export default function Construction({ pageNotFound = false }) {
 					<p>{pageNotFound ? t("fourofour.subtitle") : t("construction.subtitle")}</p>
 
 					<div className="self-end">
-						<Button
-							onClick={() => window.open("https://cdn1.hackthehill.com/legal/constitution.pdf", "_blank")}
-							fill={true}
-						>
-							<a href="/">{t("construction.home_btn")}</a>
+						<Button fill={false} onClick={() => window.location.replace("/")}>
+							{t("construction.home_btn")}
 						</Button>
 					</div>
 					<div className="absolute -top-[8.5rem] right-1/2 h-48">

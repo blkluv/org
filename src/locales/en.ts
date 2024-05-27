@@ -3,7 +3,7 @@ export default {
 		links: { events: "Events", blog: "Blog", documents: "Documents", team: "Team" },
 		aria_label: "Navigation Bar",
 	},
-	hero: { title: "Canada's Capital Hackathon", alt: "Parliament" },
+	hero: { title: "Canada's Capital Hackathon Organization", alt: "Parliament" },
 	about: {
 		title: "It's more than just a hackathon",
 		subtitle: "It's a community of passionate students who are dedicated to learning, growing, and creating.",
@@ -25,7 +25,7 @@ export default {
 		volunteers: "Volunteers",
 		prizes: "In Prizes",
 		workshops: "Workshops",
-		redbulls: "Energy Drinks Consumed",
+		redbulls: "Caffeinated Drinks Consumed",
 	},
 	gallery: {
 		title: "Where Memories are Made",
