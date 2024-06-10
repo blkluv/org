@@ -27,7 +27,7 @@ export default function Stats() {
 						</div>
 					</div>
 					<div
-						className="flex flex-col md:flex-row justify-between items-start gap-8 bg-[#020106] overflow-hidden rounded-3xl p-8 row-start-1 col-start-1 row-end-6 col-end-6"
+						className="flex flex-col md:flex-row justify-between items-start gap-8 bg-dark overflow-hidden rounded-3xl p-8 row-start-1 col-start-1 row-end-6 col-end-6"
 						data-aos="fade-right"
 					>
 						<img
@@ -41,7 +41,7 @@ export default function Stats() {
 						</div>
 					</div>
 					<div
-						className="flex flex-col md:flex-row justify-between items-start gap-8 bg-blur-svg md:bg-none md:bg-[#020106] overflow-hidden rounded-3xl p-8 row-start-6 col-start-1 row-end-11 col-end-6"
+						className="flex flex-col md:flex-row justify-between items-start gap-8 bg-blur-svg md:bg-none md:bg-dark overflow-hidden rounded-3xl p-8 row-start-6 col-start-1 row-end-11 col-end-6"
 						data-aos="fade-right"
 					>
 						<img
@@ -55,7 +55,7 @@ export default function Stats() {
 						</div>
 					</div>
 					<div
-						className="flex flex-col md:flex-row justify-between items-start gap-8 bg-[#020106] overflow-hidden rounded-3xl p-8 row-start-5 col-start-6 row-end-9 col-end-10"
+						className="flex flex-col md:flex-row justify-between items-start gap-8 bg-dark overflow-hidden rounded-3xl p-8 row-start-5 col-start-6 row-end-9 col-end-10"
 						data-aos="fade-up"
 					>
 						<img
@@ -69,7 +69,7 @@ export default function Stats() {
 						</div>
 					</div>
 					<div
-						className="flex flex-col md:flex-row justify-between items-start gap-8 bg-[#020106] overflow-hidden rounded-3xl p-8 row-start-5 col-start-10 row-end-9 col-end-13"
+						className="flex flex-col md:flex-row justify-between items-start gap-8 bg-dark overflow-hidden rounded-3xl p-8 row-start-5 col-start-10 row-end-9 col-end-13"
 						data-aos="fade-left"
 					>
 						<img
@@ -83,7 +83,7 @@ export default function Stats() {
 						</div>
 					</div>
 					<div
-						className="flex flex-row justify-between items-start gap-8 bg-[#020106] overflow-hidden rounded-3xl p-8 row-start-9 col-start-6 row-end-11 col-end-13"
+						className="flex flex-row justify-between items-start gap-8 bg-dark overflow-hidden rounded-3xl p-8 row-start-9 col-start-6 row-end-11 col-end-13"
 						data-aos="fade-left"
 					>
 						<img
@@ -97,7 +97,7 @@ export default function Stats() {
 						</div>
 					</div>
 					<div
-						className="flex flex-row justify-between items-start gap-8 bg-[#020106] overflow-hidden rounded-3xl p-8 row-start-11 col-start-1 row-end-13 col-end-13"
+						className="flex flex-row justify-between items-start gap-8 bg-dark overflow-hidden rounded-3xl p-8 row-start-11 col-start-1 row-end-13 col-end-13"
 						data-aos="fade-up"
 					>
 						<img

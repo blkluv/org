@@ -50,7 +50,7 @@ export default function DocumentsPage() {
 						</div>
 					</div>
 					<div
-						className="row-start-1 col-start-1 row-end-1 col-end-2 flex flex-col items-start justify-between gap-32 p-8 rounded-3xl bg-[#020106] overflow-hidden"
+						className="row-start-1 col-start-1 row-end-1 col-end-2 flex flex-col items-start justify-between gap-32 p-8 rounded-3xl bg-dark overflow-hidden"
 						data-aos="fade-right"
 					>
 						<div className="flex flex-row justify-between items-center w-full gap-4">
@@ -103,7 +103,7 @@ export default function DocumentsPage() {
 						</div>
 					</div>
 					<div
-						className="row-start-2 col-start-2 row-end-2 col-end-2 flex flex-col items-start justify-between gap-32 p-8 rounded-3xl bg-[#020106] overflow-hidden"
+						className="row-start-2 col-start-2 row-end-2 col-end-2 flex flex-col items-start justify-between gap-32 p-8 rounded-3xl bg-dark overflow-hidden"
 						data-aos="fade-left"
 						data-aos-offset="-100"
 					>

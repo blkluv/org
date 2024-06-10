@@ -172,7 +172,7 @@ export default function Gallery() {
 							</div>
 						</div>
 						<div
-							className="rounded-3xl bg-[#020106] row-start-8 col-start-1 row-end-13 col-end-9 p-4 xs:h-36 aos-frame"
+							className="rounded-3xl bg-dark row-start-8 col-start-1 row-end-13 col-end-9 p-4 xs:h-36 aos-frame"
 							data-aos="zoom-in"
 						>
 							<img
@@ -182,7 +182,7 @@ export default function Gallery() {
 							/>
 						</div>
 						<div
-							className="rounded-3xl bg-[#020106] row-start-1 col-start-7 row-end-8 col-end-13 p-4 xs:h-36 z-10 aos-frame"
+							className="rounded-3xl bg-dark row-start-1 col-start-7 row-end-8 col-end-13 p-4 xs:h-36 z-10 aos-frame"
 							data-aos="zoom-in"
 						>
 							<img

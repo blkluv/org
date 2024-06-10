@@ -81,7 +81,7 @@ export default function Testimonials() {
 						</div>
 					</div>
 					<div
-						className="flex flex-col justify-between items-start gap-8 bg-[#020106] overflow-hidden rounded-3xl p-8 row-start-1 col-start-1 row-end-8 col-end-8"
+						className="flex flex-col justify-between items-start gap-8 bg-dark overflow-hidden rounded-3xl p-8 row-start-1 col-start-1 row-end-8 col-end-8"
 						data-aos="fade-right"
 					>
 						<div className="flex flex-row items-center gap-4">
@@ -131,7 +131,7 @@ export default function Testimonials() {
 						</div>
 					</div>
 					<div
-						className="flex flex-col justify-center items-between text-end bg-[#020106] rounded-3xl p-8 row-start-10 col-start-8 row-end-13 col-end-13"
+						className="flex flex-col justify-center items-between text-end bg-dark rounded-3xl p-8 row-start-10 col-start-8 row-end-13 col-end-13"
 						data-aos="fade-up"
 					>
 						<div className="self-end">
