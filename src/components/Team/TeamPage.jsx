@@ -7,7 +7,6 @@ import { locale, t } from "../../i18n";
 import imageUrlBuilder from "@sanity/image-url";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import fallback_headshot from "../../assets/headshots/Template.webp";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
@@ -83,7 +82,14 @@ export default function TeamPage({ teams }) {
 				}`}
 			>
 				<img
-					src={member?.photo?.[suf] ? urlFor(member?.photo?.[suf].asset).url() : fallback_headshot.src}
+					src={
+						member?.photo?.[suf]
+							? urlFor(member?.photo?.[suf].asset).url()
+							: urlFor(
+									teams?.filter(currTeam => currTeam?.year?.toString() === selectedYear)[0]
+										?.fallbackPhoto?.asset,
+							  ).url()
+					}
 					className="w-full h-full object-cover rounded-[50%] shadow-small-glow"
 				/>
 

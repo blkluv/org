@@ -6,6 +6,7 @@ const pathName = "/team";
 import { sanityClient } from "sanity:client";
 const query = `*[_type == "team"] {
   year,
+  fallbackPhoto,
   members[]->
 }`;
 const teams = await sanityClient.fetch(query);
