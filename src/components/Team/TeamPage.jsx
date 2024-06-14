@@ -19,6 +19,7 @@ export default function TeamPage({ teams }) {
 	const suf = `year_${selectedYear}`;
 	const t_teamNames = t("team.teams");
 	const t_positions = t("team.positions");
+	const [subTeams, setSubTeams] = useState({});
 
 	function urlFor(source) {
 		return builder.image(source);
@@ -29,15 +30,56 @@ export default function TeamPage({ teams }) {
 	}, []);
 
 	useEffect(() => {
-		console.log(teams?.filter(currTeam => currTeam.year.toString() === selectedYear)?.[0]?.members);
-		console.log(suf);
+		setSubTeams({});
+		teams
+			?.filter(currTeam => currTeam?.year?.toString() === selectedYear)?.[0]
+			?.members.map(member => {
+				const subTeam =
+					member.position?.[suf] === "president" ||
+					member.position?.[suf] === "secretary" ||
+					member.position?.[suf] === "director"
+						? "executive"
+						: member.teamName?.[suf] || "other";
+
+				setSubTeams(prevState => {
+					const newState = { ...prevState };
+					newState[subTeam] = [...(prevState[subTeam] || []), member];
+					return newState;
+				});
+
+				return null;
+			});
+
+		setSubTeams(prevState => {
+			const newState = { ...prevState };
+			Object.keys(newState).forEach(subTeam => {
+				newState[subTeam] = newState[subTeam].sort((a, b) => {
+					if (a.position?.[suf] === "president") return -1;
+					if (b.position?.[suf] === "president") return 1;
+					if (a.position?.[suf] === "secretary") return -1;
+					if (b.position?.[suf] === "secretary") return 1;
+					if (a.position?.[suf] === "director") return -1;
+					if (b.position?.[suf] === "director") return 1;
+					if (a.position?.[suf] === "manager") return -1;
+					if (b.position?.[suf] === "manager") return 1;
+					if (a.position?.[suf] === "coordinator") return -1;
+					if (b.position?.[suf] === "coordinator") return 1;
+					if (a.position?.[suf] === "advisor") return -1;
+					if (b.position?.[suf] === "advisor") return 1;
+					if (a.name < b.name) return -1;
+					if (a.name > b.name) return 1;
+					return 0;
+				});
+			});
+			return newState;
+		});
 	}, [selectedYear]);
 
 	const memberCard = (member, i) => (
 		<li key={i} className="basis-1/5 xl:basis-1/3 md:basis-1/2 p-4" data-aos="fade-up">
 			<div
 				className={`flex flex-col text-center gap-2 p-4 rounded-3xl overflow-hidden  border border-theme-red ${
-					i % 3 === 0 ? "bg-blur-svg" : "bg-dark"
+					i % 2 === 0 ? "bg-blur-svg" : "bg-dark"
 				}`}
 			>
 				<img
@@ -119,12 +161,16 @@ export default function TeamPage({ teams }) {
 							))}
 					</select>
 				</div>
-				<ul className="flex flex-wrap justify-between w-10/12 max-w-2xl">
-					{teams
-						?.filter(currTeam => currTeam.year.toString() === selectedYear)?.[0]
-						?.members //sort by teamName, and then add h2 for each teamName
-						?.sort((a, b) => (a.teamName[suf] > b.teamName[suf] ? 1 : -1))
-						.map((member, i) => memberCard(member, i))}
+				<ul className="flex flex-wrap justify-evenly w-10/12 max-w-2xl gap-16">
+					{subTeams &&
+						Object.keys(subTeams).map((subTeam, i) => (
+							<li key={i} className="w-full">
+								<h2>{$locale === "en" ? subTeam : t_teamNames[subTeam].split(" ").slice(-1)[0]}</h2>
+								<ul className="flex flex-wrap justify-between w-full mt-2">
+									{subTeams[subTeam].map((member, i) => memberCard(member, i))}
+								</ul>
+							</li>
+						))}
 				</ul>
 			</div>
 			<img
