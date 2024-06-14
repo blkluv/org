@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../../global.css";
-import Construction from "../Construction/Construction";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import shape from "../../assets/patterns/ssshape.svg";
@@ -9,7 +8,6 @@ import { useStore } from "@nanostores/react";
 import { locale, t } from "../../i18n";
 import imageUrlBuilder from "@sanity/image-url";
 import hth_fall_theme from "../../assets/SVGs/hth_fall_theme.svg";
-import { Suspense } from "react";
 import calendar from "/src/assets/icons/calendar.svg";
 import Button from "../Button/Button";
 
@@ -36,7 +34,7 @@ export default function BlogPage({ posts }) {
 						{posts?.map((post, i) => (
 							<li
 								key={i}
-								className="basis-1/2 lg:basis-full p-3 hover:cursor-pointer transition-all duration-300 hover:scale-[1.02]"
+								className="basis-1/2 lg:basis-full p-3 hover:cursor-pointer"
 								onClick={() => (window.location.href = `/blog/${post.slug.current}`)}
 								data-aos="fade-up"
 								data-aos-offset={i >= 2 ? "-100" : "0"}
