@@ -74,7 +74,7 @@ export default {
 		subtitle: "These are the companies that make Hack the Hill possible year after year.",
 	},
 	collaborators: {
-		title: "and some of our collaborators",
+		title: "and Collaborators 🤝",
 		subtitle: "We couldn't do it without the help of these amazing organizations.",
 	},
 	testimonials: {
