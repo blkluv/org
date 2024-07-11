@@ -74,7 +74,7 @@ export default {
 		subtitle: "Ce sont les entreprises qui rendent Hack the Hill possible année après année.",
 	},
 	collaborators: {
-		title: "et nos partenaires communautaires",
+		title: "et nos Partenaires 🤝",
 		subtitle: "Nous ne pourrions pas le faire sans l'aide de ces organisations incroyables.",
 	},
 	testimonials: {
