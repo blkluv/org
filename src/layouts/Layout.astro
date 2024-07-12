@@ -36,7 +36,7 @@ const url = import.meta.env.SITE.replace(/\/$/, "");
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content={color} />
 		<meta name="msapplication-TileColor" content={color} />
-		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="manifest" href={`${url}/site.webmanifest`} />
 		<title>{title}</title>
 
 		<!--- Google analytics tags  -->
@@ -73,7 +73,7 @@ const url = import.meta.env.SITE.replace(/\/$/, "");
 		<meta name="keywords" content={keywords} />
 
 		<!-- humans.txt -->
-		<link type="text/plain" rel="author" href="/humans.md" />
+		<link type="text/plain" rel="author" href={`${url}/humans.md`} />
 
 		<!-- canonical -->
 		<link rel="canonical" href={url} />
@@ -82,7 +82,7 @@ const url = import.meta.env.SITE.replace(/\/$/, "");
 		<link rel="sitemap" type="application/xml" title="Sitemap" href={`${url}/sitemap-index.xml`} />
 
 		<!-- robots.txt -->
-		<link rel="robots" type="text/plain" title="Robots" href="/robots.txt" />
+		<link rel="robots" type="text/plain" title="Robots" href={`${url}/robots.txt`} />
 
 		<!-- favicons for all devices -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
