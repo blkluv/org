@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import Construction from "../Construction/Construction";
 
 export default function TeamPage({ teams }) {
 	const [selectedYear, setSelectedYear] = useState(teams?.sort((a, b) => b.year - a.year)?.[0]?.year.toString());
@@ -149,6 +150,8 @@ export default function TeamPage({ teams }) {
 	);
 
 	return (
+		<Construction />
+		/*
 		<div className="flex justify-center items-center w-full bg-background-dark relative overflow-hidden">
 			<div className="flex flex-col w-10/12 h-full justify-center items-center gap-20 py-36 text-left max-w-2xl z-[1]">
 				<div className="flex flex-row justify-between items-center text-left w-full" data-aos="fade-up">
@@ -190,5 +193,6 @@ export default function TeamPage({ teams }) {
 				className="w-full max-w-bg-deco opacity-25 absolute z-[0] translate-x-1/2 translate-y-[10%] -scale-y-75 scale-x-75"
 			/>
 		</div>
+		*/
 	);
 }
