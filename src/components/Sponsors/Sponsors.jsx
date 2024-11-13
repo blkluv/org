@@ -15,6 +15,10 @@ import echo3d from "/src/assets/Logos/Partners/Echo3d.svg";
 import voiceflow from "/src/assets/Logos/Partners/Voiceflow.svg";
 import StickerMule from "/src/assets/Logos/Partners/StickerMule.svg";
 import OpenProject from "/src/assets/Logos/Partners/OpenProject.svg";
+import RedBull from "/src/assets/Logos/Partners/Redbull.svg";
+import PnG from "/src/assets/Logos/Partners/P&G.svg";
+import Ross from "/src/assets/Logos/Partners/Ross.svg";
+import LiquidIV from "/src/assets/Logos/Partners/LiquidIV.png";
 
 //Collaborators
 import BTA from "/src/assets/Logos/Collaborators/BTA.svg";
@@ -52,6 +56,10 @@ export default function Sponsors() {
 			{ href: "https://about.google", ...Google, alt: "Google" },
 			{ href: "https://www.openproject.org/", ...OpenProject, alt: "OpenProject" },
 			{ href: "https://mule.to/p5ni", ...StickerMule, alt: "StickerMule" },
+			{ href: "https://www.redbull.com/ca-en/", ...RedBull, alt: "Red Bull" },
+			{ href: "https://www.pg.com/", ...PnG, alt: "P&G" },
+			{ href: "https://liquid-iv.com/", ...LiquidIV, alt: "Liquid IV" },
+			{ href: "https://www.rossvideo.com/", ...Ross, alt: "Ross Video" },
 		],
 		collaborators: [
 			{ href: "https://www.instagram.com/telferbta/", ...BTA, alt: "BTA" },
