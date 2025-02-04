@@ -139,11 +139,18 @@ export default {
 	},
 	documents: {
 		title: "Documents",
-		subtitle: "Discover the official documents of Hack the Hill.",
+		subtitle: "Discover the Capital Technology Network's official documents.",
 		constitution: "Constitution",
-		constitution_desc:
-			"The official constitution of Hack the Hill, outlining the organization's structure and purpose.",
+		constitution_desc: "Our constitution outlines the structure, purpose, and rules of our organization.",
 		constitution_btn: "Read the Constitution",
+		policies: "Policies Manual",
+		policies_desc:
+			"Our policies manual outlines our internal structure, regulations, and procedures for our members.",
+		financials: "Financial Statements",
+		financials_desc:
+			"View our profit & loss report to see where our money comes from and where it goes.",
+		financials_btn: "View the Profit & Loss Report",
+		policies_btn: "Read the Policies Manual",
 		privacy: "Privacy Policy",
 		privacy_desc: "Our privacy policy outlines how we collect, use, and store your personal information.",
 		privacy_btn: "Read the Privacy Policy",
