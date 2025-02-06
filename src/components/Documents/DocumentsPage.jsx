@@ -103,6 +103,31 @@ export default function DocumentsPage() {
 						data-aos="fade-left"
 					>
 						<div className="flex flex-row justify-between items-center w-full gap-4 flex-wrap">
+							<h2>{t("documents.ledger")}</h2>
+							<img
+								className="box-border h-20 w-20 aspect-square object-cover rounded-[50%] shadow-glow md:h-12 md:w-12"
+								src={cv.src}
+								alt="Document"
+							/>
+						</div>
+						<div>
+							<p>{t("documents.ledger_desc")}</p>
+							<div className="w-full flex justify-end mt-4">
+								<a
+									href="https://cdn1.hackthehill.com/legal/general-ledger.pdf"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<Button fill={false}>{t("documents.ledger_btn")}</Button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div
+						className="flex flex-col items-start justify-between gap-32 md:gap-8 p-8 rounded-3xl bg-dark overflow-hidden"
+						data-aos="fade-right"
+					>
+						<div className="flex flex-row justify-between items-center w-full gap-4 flex-wrap">
 							<h2>{t("documents.privacy")}</h2>
 							<img
 								className="box-border h-20 w-20 aspect-square object-cover rounded-[50%] shadow-glow md:h-12 md:w-12"
@@ -125,7 +150,7 @@ export default function DocumentsPage() {
 					</div>
 					<div
 						className="flex flex-col items-start justify-between gap-32 md:gap-8 p-8 rounded-3xl bg-blur-svg overflow-hidden"
-						data-aos="fade-right"
+						data-aos="fade-left"
 					>
 						<div className="flex flex-row justify-between items-center w-full gap-4 flex-wrap">
 							<h2>{t("documents.conduct")}</h2>
@@ -150,7 +175,7 @@ export default function DocumentsPage() {
 					</div>
 					<div
 						className="flex flex-col items-start justify-between gap-32 md:gap-8 p-8 rounded-3xl bg-dark overflow-hidden"
-						data-aos="fade-left"
+						data-aos="fade-right"
 					>
 						<div className="flex flex-row justify-between items-center w-full gap-4 flex-wrap">
 							<h2>{t("documents.service")}</h2>

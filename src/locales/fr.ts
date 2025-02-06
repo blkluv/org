@@ -147,10 +147,14 @@ export default {
 		policies: "Manuel des Politiques",
 		policies_desc:
 			"Notre manuel des politiques décrit notre structure interne, nos règlements et nos procédures pour nos membres.",
-		financials: "États Financiers",
+		financials: "Finances",
 		financials_desc:
 			"Consultez notre rapport de profits et pertes pour voir d'où provient notre argent et comment il est dépensé.",
 		financials_btn: "Voir le Rapport de Profits et Pertes",
+		ledger: "Grand Livre",
+		ledger_desc:
+			"Le grand livre est un enregistrement complet de toutes les transactions financières de l'organisation.",
+		ledger_btn: "Voir le Grand Livre",
 		policies_btn: "Lire le Manuel des Politiques",
 		privacy: "Politique de Confidentialité",
 		privacy_desc:

@@ -146,10 +146,14 @@ export default {
 		policies: "Policies Manual",
 		policies_desc:
 			"Our policies manual outlines our internal structure, regulations, and procedures for our members.",
-		financials: "Financial Statements",
+		financials: "Financials",
 		financials_desc:
 			"View our profit & loss report to see where our money comes from and where it goes.",
 		financials_btn: "View the Profit & Loss Report",
+		ledger: "Ledger",
+		ledger_desc:
+			"View our ledger to see a detailed record of all our financial transactions.",
+		ledger_btn: "View the General Ledger",
 		policies_btn: "Read the Policies Manual",
 		privacy: "Privacy Policy",
 		privacy_desc: "Our privacy policy outlines how we collect, use, and store your personal information.",
